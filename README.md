@@ -1,5 +1,7 @@
 # Weather Dashboard
 
+**[Live Demo](https://weather-dashboard-ah.vercel.app)** &nbsp;|&nbsp; **[GitHub](https://github.com/ahenderson316/weather-dashboard)**
+
 A real-time weather dashboard built with **vanilla JavaScript** that fetches live data from the OpenWeatherMap API.
 
 ## Features
