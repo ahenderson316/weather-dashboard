@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Weather Dashboard</h1>
+      <p class="subtitle">Real-time weather at your fingertips</p>
+    </header>
+
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter a city name..." />
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <div id="error-message" class="error hidden"></div>
+
+    <div id="weather-card" class="weather-card hidden">
+      <div class="weather-main">
+        <div class="city-info">
+          <h2 id="cityName"></h2>
+          <p id="countryName"></p>
+          <p id="dateTime"></p>
+        </div>
+        <div class="temp-info">
+          <img id="weatherIcon" src="" alt="weather icon" />
+          <span id="temperature"></span>
+        </div>
+      </div>
+      <div class="weather-description">
+        <p id="description"></p>
+      </div>
+      <div class="weather-details">
+        <div class="detail-item">
+          <span class="label">Feels Like</span>
+          <span id="feelsLike"></span>
+        </div>
+        <div class="detail-item">
+          <span class="label">Humidity</span>
+          <span id="humidity"></span>
+        </div>
+        <div class="detail-item">
+          <span class="label">Wind Speed</span>
+          <span id="windSpeed"></span>
+        </div>
+        <div class="detail-item">
+          <span class="label">Visibility</span>
+          <span id="visibility"></span>
+        </div>
+        <div class="detail-item">
+          <span class="label">Pressure</span>
+          <span id="pressure"></span>
+        </div>
+        <div class="detail-item">
+          <span class="label">UV Index</span>
+          <span id="uvIndex">N/A</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="forecast" class="forecast hidden">
+      <h3>5-Day Forecast</h3>
+      <div id="forecastCards" class="forecast-cards"></div>
+    </div>
+
+    <div class="recent-searches">
+      <h3>Recent Searches</h3>
+      <div id="recentList" class="recent-list"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
